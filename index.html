@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio | Matheus</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/devicon@2.17.0/devicon.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+
+    <header>
+
+        <a href="#home" onclick="rolarSuave(event)"><h2 class="logo">MMG.</h2></a>
+
+        <nav>
+            <a href="#home">Início</a>
+            <a href="#about">Sobre</a>
+            <a href="#projects">Projetos</a>
+            <a href="#skills">Habilidades</a>
+            <a href="#contact">Contato</a>
+
+            <label class="theme-switch">
+                <input type="checkbox" id="themeToggle">
+
+                <span class="slider">
+
+                    <svg class="icon sun" viewBox="0 0 24 24">
+
+                        <circle cx="12" cy="12" r="4"></circle>
+
+                        <line x1="12" y1="1.5" x2="12" y2="4"></line>
+                        <line x1="12" y1="20" x2="12" y2="22.5"></line>
+
+                        <line x1="1.5" y1="12" x2="4" y2="12"></line>
+                        <line x1="20" y1="12" x2="22.5" y2="12"></line>
+
+                        <line x1="4.2" y1="4.2" x2="6" y2="6"></line>
+                        <line x1="18" y1="18" x2="19.8" y2="19.8"></line>
+
+                        <line x1="18" y1="6" x2="19.8" y2="4.2"></line>
+                        <line x1="4.2" y1="19.8" x2="6" y2="18"></line>
+
+                    </svg>
+
+                    <svg class="icon moon" viewBox="0 0 24 24">
+
+                        <path d="M20 14.5A8.5 8.5 0 0 1 9.5 4 9 9 0 1 0 20 14.5z"></path>
+
+                    </svg>
+
+                </span>
+
+            </label>
+
+        </nav>
+
+    </header>
+
+    <section class="home" id="home">
+
+        <div class="texto">
+
+            <span>OLÁ, EU SOU</span>
+
+            <h1>
+                Matheus <br>
+                Miranda Gomes
+            </h1>
+
+            <h3>
+                Desenvolvedor Full Stack
+            </h3>
+
+            <p>
+                Desenvolvo aplicações modernas, interfaces intuitivas e soluções
+                eficientes utilizando tecnologias web e mobile. Meu objetivo é
+                transformar ideias em experiências digitais elegantes.
+            </p>
+
+            <div class="botoes">
+
+                <a href="#about" class="btnPrincipal">
+                    Sobre Mim
+                </a>
+
+                <a href="#projects" class="btnSecundario">
+                    Ver Projetos
+                </a>
+
+            </div>
+
+        </div>
+
+        <!--  
+        <div class="foto">
+
+            <div class="circulo"></div>
+
+            <img src="matheus.jpg" alt="Matheus">
+
+        </div>-->
+
+    </section>
+
+    <section class="about" id="about">
+
+        <h2>Sobre</h2>
+
+        <div class="about-grid">
+
+            <!-- Acadêmico -->
+            <div class="about-card">
+
+                <h3>Trajetória Acadêmica</h3>
+
+                <div class="timeline">
+
+                    <div class="timeline-item">
+                        <span class="year">2024</span>
+                        <p>Ingressei no Colégio COTEMIG.</p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <span class="year">2025</span>
+                        <p>Recebi o reconhecimento como aluno destaque.</p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <span class="year">2026</span>
+                        <p>Ingressei no curso de Desenvolvimento Mobile.</p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <span class="year">2026</span>
+                        <p>Fui convidado para palestrar no Minas Summit.</p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <span class="year">2026</span>
+                        <p>Concluí o Ensino Médio Técnico no Colégio COTEMIG.</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Profissional/Pessoal -->
+            <div class="about-card">
+
+                <h3>Experiências</h3>
+
+                <div class="timeline">
+
+                    <div class="timeline-item">
+                        <span class="year">2024</span>
+                        <p>Comecei a programar.</p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <span class="year">2024</span>
+                        <p>Desenvolvi um aplicativo voltado à educação financeira e aos investimentos.</p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <span class="year">2025</span>
+                        <p>Passei o ano desenvolvendo sites, sistemas CRUD e outras aplicações.</p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <span class="year">2026</span>
+                        <p>Desenvolvi diversas aplicações para as plataformas Android e iOS.</p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <span class="year">2026</span>
+                        <p>Desenvolvi, em equipe, o projeto IFIX.</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="projects" id="projects">
+
+        <h2>Projetos</h2>
+
+        <div class="projects-grid">
+            
+            <div class="project-card"
+                data-title="IFIX"
+                data-description="A IFIX é uma plataforma desenvolvida em colaboração com uma equipe como projeto final de curso. O sistema conecta pessoas que enfrentam problemas relacionados à tecnologia a prestadores de serviços especializados. Para oferecer uma experiência mais eficiente, a plataforma utiliza Inteligência Artificial para analisar a solicitação do usuário e identificar o profissional com as competências mais adequadas para solucionar cada problema."
+                data-images="ifix-1.jpg,ifix-2.jpg,ifix-3.jpg"
+                data-techs="HTML,CSS,JavaScript,Python,Flask,MySQL">
+
+                <i class="fa-solid fa-arrow-up-right-from-square project-arrow"></i>
+
+                <div class="project-top">
+
+                    <div class="project-icon blue">
+                        <i class="fa-solid fa-screwdriver-wrench"></i>
+                    </div>
+
+                    <h3>IFIX</h3>
+
+                </div>
+
+                <p>Plataforma que conecta usuários a técnicos especializados com auxílio de Inteligência Artificial.</p>
+
+                <div class="project-techs">
+                    <span>HTML</span>
+                    <span>Flask</span>
+                    <span>MySQL</span>
+                </div>
+
+            </div>
+
+            <div class="project-card"
+                data-title="DinoAtlas"
+                data-description="O DinoAtlas é um sistema CRUD moderno voltado ao uso pessoal de paleontólogos ou de empresas da área de história natural. Ele foi desenvolvido para permitir que o usuário cadastre diferentes espécies com informações completas e variadas. O programa também oferece diversas outras funcionalidades, como edição de registros, filtragem, sistema de busca, histórico dos períodos geológicos da Terra, curiosidades e muito mais."
+                data-images="dinoatlas1.jpg,dinoatlas3.jpg,dinoatlas2.jpg"
+                data-techs="HTML,CSS,JavaScript">
+                
+                <i class="fa-solid fa-arrow-up-right-from-square project-arrow"></i>
+
+                <div class="project-top">
+
+                    <div class="project-icon terracotta">
+                        <i class="fa-solid fa-paw"></i>
+                    </div>
+                
+                    <h3>DinoAtlas</h3>
+
+                </div>
+
+                <p>Sistema CRUD para gerenciamento de espécies e informações sobre paleontologia.</p>
+
+                <div class="project-techs">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                </div>
+
+            </div>
+
+            <div class="project-card"
+                data-title="Tela de ligações"
+                data-description="Este projeto consiste em um layout desenvolvido em Swift que simula a tela de chamadas do WhatsApp em dispositivos com o sistema operacional iOS. O objetivo foi reproduzir fielmente a interface do aplicativo, aplicando conceitos de desenvolvimento de interfaces e boas práticas de design para a plataforma Apple."
+                data-images="ligacoes.png"
+                data-techs="Swift">
+                <i class="fa-solid fa-arrow-up-right-from-square project-arrow"></i>
+
+                <div class="project-top">
+
+                    <div class="project-icon blue">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+
+                    <h3>Tela de ligações</h3>
+
+                </div>
+
+                <p>Layout desenvolvido em Swift que reproduz a tela de chamadas do WhatsApp para dispositivos iOS.</p>
+
+                <div class="project-techs">
+                    <span>Swift</span>
+                </div>
+
+            </div>
+
+            <div class="project-card"
+                data-title="Marca Encontro"
+                data-description="O Marca Encontro é um sistema desenvolvido para tornar o agendamento de encontros mais interativo e divertido. O programa conta com um botão ''Não'' que muda de posição sempre que o usuário tenta clicar nele, proporcionando uma experiência descontraída. Além disso, o sistema possui validações que impedem a seleção de datas passadas ou excessivamente futuras. Ao concluir o preenchimento do formulário, o usuário pode enviar automaticamente as informações do encontro diretamente para o WhatsApp do proprietário do domínio."
+                data-images="marca-encontro-1.jpg,marca-encontro-2.jpg,marca-encontro-3.jpg"
+                data-techs="HTML,CSS,JavaScript">
+
+                <i class="fa-solid fa-arrow-up-right-from-square project-arrow"></i>
+
+                <div class="project-top">
+
+                    <div class="project-icon red">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <h3>Marca Encontro</h3>
+
+                </div>
+                <p>Sistema de agendamento de encontros com interface interativa e integração com o WhatsApp.</p>
+
+                <div class="project-techs">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                </div>
+
+            </div>
+
+            <div class="project-card"
+                data-title="Bulls and Cows"
+                data-description="Bulls and Cows é um jogo clássico de adivinhação de palavras desenvolvido em Kotlin. O sistema gera automaticamente uma palavra secreta, e o jogador deve descobri-la em um número limitado de tentativas. A cada palpite, o programa fornece dicas indicando quantas letras foram acertadas na posição correta (Bulls) e quantas fazem parte da palavra, mas estão em posições diferentes (Cows), estimulando o raciocínio lógico e a estratégia até que a palavra seja completamente revelada."
+                data-images="bull-n-cows-1.jpg,bull-n-cows-2.jpg"
+                data-techs="Kotlin">
+
+                <i class="fa-solid fa-arrow-up-right-from-square project-arrow"></i>
+                
+                <div class="project-top">
+
+                    <div class="project-icon purple">
+                        <i class="fa-solid fa-cow"></i>
+                    </div>
+
+                    <h3>Bulls and Cows</h3>
+
+                </div>
+
+                <p>Jogo de adivinhação de palavras com dicas baseadas na posição e presença das letras.</p>
+
+                <div class="project-techs">
+                    <span>Kotlin</span>
+                </div>
+
+            </div>
+
+            <div class="project-card"
+                data-title="Em breve"
+                data-description="Novos projetos serão adicionados em breve."
+                data-images=""
+                data-techs="HTML,CSS,JavaScript,PHP,Python,Flask,CSharp,Dart,Flutter,Kotlin,Swift,MySQL">
+
+                <div class="project-top">
+
+                    <div class="project-icon todo">
+                        <i class="fa-regular fa-clock"></i>
+                    </div>
+
+                    <h3>Em breve</h3>
+
+                </div>
+
+                <p>Novos projetos serão adicionados em breve.</p>
+
+                <div class="project-techs">
+                    <span>Aguarde...</span>
+                </div>
+
+            </div>
+
+            <div class="project-card"
+                data-title="Em breve"
+                data-description="Novos projetos serão adicionados em breve."
+                data-images=""
+                data-techs="HTML,CSS,JavaScript,PHP,Python,Flask,CSharp,Dart,Flutter,Kotlin,Swift,MySQLL">
+
+                <div class="project-top">
+
+                    <div class="project-icon todo">
+                        <i class="fa-regular fa-clock"></i>
+                    </div>
+
+                    <h3>Em breve</h3>
+
+                </div>
+
+                <p>Novos projetos serão adicionados em breve.</p>
+
+                <div class="project-techs">
+                    <span>Aguarde...</span>
+                </div>
+
+            </div>
+
+            <div class="project-card"
+                data-title="Em breve"
+                data-description="Novos projetos serão adicionados em breve."
+                data-images=""
+                data-techs="HTML,CSS,JavaScript,PHP,Python,Flask,CSharp,Dart,Flutter,Kotlin,Swift,MySQL">
+
+                <div class="project-top">
+
+                    <div class="project-icon todo">
+                        <i class="fa-regular fa-clock"></i>
+                    </div>
+
+                    <h3>Em breve</h3>
+
+                </div>
+
+                <p>Novos projetos serão adicionados em breve.</p>
+
+                <div class="project-techs">
+                    <span>Aguarde...</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <h2 class="skills-title" id="skills">Habilidades</h2>
+
+    <section class="skills">
+
+        <div class="fade left"></div>
+
+        <div class="skills-track skills-left">
+            
+            <div class="skill">
+                <i class="devicon-html5-plain colored"></i>
+                <span>HTML</span>
+            </div>
+
+            <div class="skill">
+                <i class="devicon-css3-plain colored"></i>
+                <span>CSS</span>
+            </div>
+
+            <div class="skill">
+                <i class="devicon-javascript-plain colored"></i>
+                <span>JavaScript</span>
+            </div>
+            
+            <!-- <div class="skill">
+                <i class="devicon-php-plain colored"></i>
+                <span>PHP</span>
+            </div> -->
+
+            <div class="skill">
+                <i class="devicon-python-plain colored"></i>
+                <span>Python</span>
+            </div>
+
+            <div class="skill">
+                <i class="devicon-flask-original"></i>
+                <span>Flask</span>
+            </div>
+
+            <div class="skill">
+                <i class="devicon-csharp-plain colored"></i>
+                <span>C#</span>
+            </div>
+
+            <div class="skill">
+                <i class="devicon-dart-plain colored"></i>
+                <span>Dart</span>
+            </div>
+
+            <div class="skill">
+                <i class="devicon-flutter-plain colored"></i>
+                <span>Flutter</span>
+            </div>
+
+            <div class="skill">
+                <i class="devicon-kotlin-plain colored"></i>
+                <span>Kotlin</span>
+            </div>
+
+            <div class="skill">
+                <i class="devicon-swift-plain colored"></i>
+                <span>Swift</span>
+            </div>
+
+            <div class="skill">
+                <i class="devicon-mysql-original colored"></i>
+                <span>MySQL</span>
+            </div>
+
+        </div>
+
+        <div class="skills-track skills-right">
+
+            <div class="skill">
+                <i class="devicon-vscode-plain colored"></i>
+                <span>VS Code</span>
+            </div>
+
+            <div class="skill">
+                <i class="devicon-visualstudio-plain colored"></i>
+                <span>Visual Studio</span>
+            </div>
+
+            <div class="skill">
+                <img src="logo-intellij.webp" alt="Mindstorm" class="skill-img">
+                <span>IntelliJ IDEA</span>
+            </div>
+
+            <div class="skill">
+                <img src="logo-android-studio.webp" alt="Mindstorm" class="skill-img">
+                <span>Android Studio</span>
+            </div>
+
+            <div class="skill">
+                <img src="logo-appinventor.png" alt="Mindstorm" class="skill-img">
+                <span>MIT App Inventor</span>
+            </div>
+
+            <div class="skill">
+                <i class="devicon-git-plain colored"></i>
+                <span>Git</span>
+            </div>
+
+            <div class="skill">
+                <i class="devicon-github-original"></i>
+                <span>GitHub</span>
+            </div>
+
+            <div class="skill">
+                <img src="logo-mindstorm.png" alt="Mindstorm" class="skill-img">
+                <span>Mindstorm</span>
+            </div>
+
+            <div class="skill">
+                <img src="logo-excel.webp" alt="Mindstorm" class="skill-img">
+                <span>Excel</span>
+            </div>
+
+            <div class="skill">
+                <img src="logo-word.webp" alt="Mindstorm" class="skill-img">
+                <span>Word</span>
+            </div>
+
+            <div class="skill">
+                <img src="logo-powerpoint.png" alt="Mindstorm" class="skill-img">
+                <span>PowerPoint</span>
+            </div>
+
+        </div>
+
+        <div class="fade right"></div>
+
+    </section>
+
+    <section class="contact" id="contact">
+
+        <h2>Contato</h2>
+
+        <form class="contact-form">
+
+            <input
+                type="text"
+                placeholder="Seu nome"
+                required
+            >
+
+            <input
+                type="email"
+                placeholder="Seu e-mail"
+                required
+            >
+
+            <textarea
+                placeholder="Sua mensagem"
+                rows="6"
+                required
+            ></textarea>
+
+            <button type="submit">
+                Enviar Mensagem
+            </button>
+
+        </form>
+
+        <div class="social-buttons">
+
+            <a href="https://github.com/MatheuSemog" target="_blank" class="social-btn">
+                <i class="fa-brands fa-github"></i>
+                GitHub
+            </a>
+
+            <a href="https://www.instagram.com/matheusmsemog/?hl=pt-br" target="_blank" class="social-btn">
+                <i class="fa-brands fa-instagram"></i>
+                Instagram
+            </a>
+
+            <a href="#" target="_blank" class="social-btn">
+                <i class="fa-brands fa-linkedin"></i>
+                LinkedIn
+            </a>
+
+            <button class="social-btn" id="copyWhatsapp">
+                <i class="fa-brands fa-whatsapp"></i>
+                WhatsApp
+            </button>
+
+        </div>
+
+    </section>
+
+    <footer>
+
+        <p>
+            © 2026 Matheus Miranda Gomes. Todos os direitos reservados.
+        </p>
+
+        <span>
+            +55 (31) 98569-0131 |
+            matheuspetpet@gmail.com
+        </span>
+
+    </footer>
+
+    <div class="modal-overlay" id="modal">
+
+        <div class="modal">
+
+            <button class="close">&times;</button>
+
+            <div class="carousel">
+
+                <button class="prev">&#10094;</button>
+
+                <img id="carouselImage">
+
+                <button class="next">&#10095;</button>
+
+            </div>
+
+            <div class="dots"></div>
+
+            <div class="modal-content">
+                <h2 id="projectTitle"></h2>
+                <div class="techs" id="projectTechs"></div>
+                <p id="projectDescription"></p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
